@@ -23,19 +23,14 @@ for state in states:
                 rainfall = 20 + month_index * 2
                 humidity = 45
                 temp = 35
-
             if state == "Kerala":
                 rainfall += 40
             elif state == "Rajasthan":
                 rainfall -= 15
-
             wind_speed = 10 + month_index
             data.append([state, month, temp, humidity, wind_speed, rainfall])
 
-df = pd.DataFrame(
-    data,
-    columns=["State", "Month", "Avg_Temperature", "Humidity", "Wind_Speed", "Rainfall_mm"]
-)
+df = pd.DataFrame(data, columns=["State", "Month", "Avg_Temperature", "Humidity", "Wind_Speed", "Rainfall_mm"])
 
 if st.checkbox("Show Dataset"):
     st.write(df.head(20))
@@ -73,4 +68,4 @@ if st.button("Predict Rainfall"):
     st.success(f"Predicted Rainfall: {prediction:.2f} mm")
 
 st.write("---")
-st.caption("MAHESH CHAUDHARI | Synthetic India Climate Data | Linear Regression")
+st.caption("Mahesh Chaudhari | Synthetic India Climate Data | Linear Regression")
