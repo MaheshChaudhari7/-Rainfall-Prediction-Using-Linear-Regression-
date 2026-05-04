@@ -19,7 +19,7 @@ This project uses **Linear Regression** to predict rainfall for different Indian
 
 The app is built with **Streamlit** for an interactive and user-friendly interface.
 
---
+---
 
 ## 🚀 Features
 
